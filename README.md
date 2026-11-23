@@ -127,7 +127,7 @@ tests/                   paper values and masking protocol
 ```bibtex
 @inproceedings{vuppula2027cloudgap,
   title     = {Can Foundation Models Compensate for Incomplete Satellite Imagery? An Empirical Cost-Benefit Analysis},
-  author    = {Vuppula, Srija Yadav and Ramaswamy, Lakshmish and Mishra, Deepak and Maniyar, Chintan B. and Kumar, Abhishek and Kethavath, Harshith},
+  author    = {Vuppula, Srija Yadav and Ramaswamy, Lakshmish and Mishra, Deepak},
   booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) Workshops},
   year      = {2027}
 }
