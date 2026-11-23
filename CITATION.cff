@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper."
+title: "cloud-gap-geometry"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/SrijaVuppula/cloud-gap-geometry"
+authors:
+  - {family-names: Vuppula, given-names: Srija Yadav, affiliation: University of Georgia}
+  - {family-names: Ramaswamy, given-names: Lakshmish, affiliation: University of Georgia}
+  - {family-names: Mishra, given-names: Deepak, affiliation: University of Georgia}
+  - {family-names: Maniyar, given-names: Chintan B., affiliation: University of Georgia}
+  - {family-names: Kumar, given-names: Abhishek, affiliation: University of Georgia}
+  - {family-names: Kethavath, given-names: Harshith, affiliation: University of Georgia}
+preferred-citation:
+  type: conference-paper
+  title: "Can Foundation Models Compensate for Incomplete Satellite Imagery? An Empirical Cost-Benefit Analysis"
+  collection-title: "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) Workshops"
+  year: 2027
+  authors:
+    - {family-names: Vuppula, given-names: Srija Yadav}
+    - {family-names: Ramaswamy, given-names: Lakshmish}
+    - {family-names: Mishra, given-names: Deepak}
+    - {family-names: Maniyar, given-names: Chintan B.}
+    - {family-names: Kumar, given-names: Abhishek}
+    - {family-names: Kethavath, given-names: Harshith}

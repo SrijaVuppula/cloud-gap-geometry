@@ -1,0 +1,50 @@
+# Settings used for every result in the paper.
+# Relative paths are resolved from the repository root.
+# Each path can be overridden with an environment variable (shown in brackets).
+
+paths:
+  chips_dir: data/chips                 # [CLOUDGAP_CHIPS]    HLS chips, chip_*_merged.tif
+  weights_dir: weights/prithvi          # [CLOUDGAP_WEIGHTS]  released Prithvi-EO-2.0 TL weights, one folder per backbone
+  finetuned_dir: weights/finetuned      # [CLOUDGAP_FINETUNED] our checkpoints: seed{N}/{backbone}/best.pt
+  results_dir: results                  # [CLOUDGAP_RESULTS]  raw outputs (released with the repo)
+
+backbones:
+  tiny: {hf_repo: ibm-nasa-geospatial/Prithvi-EO-2.0-tiny-TL, file: Prithvi_EO_V2_tiny_TL.pt, patch_size: 16}
+  100M: {hf_repo: ibm-nasa-geospatial/Prithvi-EO-2.0-100M-TL, file: Prithvi_EO_V2_100M_TL.pt, patch_size: 16}
+  300M: {hf_repo: ibm-nasa-geospatial/Prithvi-EO-2.0-300M-TL, file: Prithvi_EO_V2_300M_TL.pt, patch_size: 16}
+  600M: {hf_repo: ibm-nasa-geospatial/Prithvi-EO-2.0-600M-TL, file: Prithvi_EO_V2_600M_TL.pt, patch_size: 14}
+
+finetuned_hf_repo: SrijaVuppula/cloud-gap-geometry-checkpoints
+
+data:
+  hf_dataset: ibm-nasa-geospatial/multi-temporal-crop-classification
+  img_size: 224
+  n_bands: 6
+  n_frames: 3            # spring, summer, fall
+  masked_frame: 1        # summer
+  reflectance_scale: 10000
+
+evaluation:              # Section 4.2
+  n_chips: 500
+  chip_seed: 42
+  ratios: [0.20, 0.40, 0.60, 0.80]
+  trials_per_chip: 5
+
+finetune:                # Section 4.3
+  epochs: 20
+  lr: 1.0e-5
+  weight_decay: 0.05
+  warmup_steps: 200
+  batch_size: 1
+  grad_clip: 1.0
+  ratio_range: [0.20, 0.80]
+  seeds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  num_workers: 2
+
+energy:                  # Section 4.5
+  chip: chip_217_425_merged.tif
+  ratios: [0.10, 0.20, 0.40, 0.60, 0.80]
+  n_warmup_passes: 3
+  n_timed_passes: 20
+  power_poll_s: 0.02
+  gpu_warmup_s: 3.0

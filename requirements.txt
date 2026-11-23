@@ -1,0 +1,11 @@
+# Full pipeline (GPU). Python 3.11.
+# terratorch is pinned: its masking routine's ratio-to-token truncation
+# (paper, footnote 1) and the PrithviMAE internals used in src/cloudgap/model.py
+# match this version.
+terratorch==1.2.6
+torch>=2.1
+rasterio>=1.3
+scikit-image>=0.22
+huggingface_hub>=0.23
+nvidia-ml-py>=12.535   # NVML power readings (import name: pynvml)
+-r requirements-analysis.txt
