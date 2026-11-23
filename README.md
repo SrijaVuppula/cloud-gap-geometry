@@ -2,7 +2,7 @@
 
 ### An Empirical Cost-Benefit Analysis
 
-**Srija Yadav Vuppula, Lakshmish Ramaswamy, Deepak Mishra, Chintan B. Maniyar, Abhishek Kumar, Harshith Kethavath**
+**Srija Yadav Vuppula, Lakshmish Ramaswamy, Deepak Mishra**
 University of Georgia
 
 CV4EO Workshop, WACV 2027 &nbsp;·&nbsp; [Paper](#) &nbsp;·&nbsp; [arXiv](#) &nbsp;·&nbsp; [Checkpoints](https://huggingface.co/SrijaVuppula/cloud-gap-geometry-checkpoints)
