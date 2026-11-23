@@ -7,9 +7,8 @@ University of Georgia
 
 CV4EO Workshop @ WACV 2027
 
-<!-- Uncomment each link once it exists:
 [Paper](URL) | [arXiv](URL) | [Checkpoints](https://huggingface.co/SrijaVuppula/cloud-gap-geometry-checkpoints)
--->
+
 
 ![Figure 1](figures/teaser.png)
 
